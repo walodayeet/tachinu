@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wind Rises Animation</title>
+  <!-- Include AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+    .movie-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 40px;
+      margin: 60px auto;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      max-width: 1200px; /* Increased max width */
+    }
+    .movie-section img {
+      max-width: 600px; /* Increased image size */
+      width: 100%; /* Ensures responsiveness */
+      height: auto;
+      border-radius: 10px;
+    }
+    .movie-details {
+      flex: 1;
+      padding: 40px; /* Added more padding */
+    }
+    .movie-title {
+      font-size: 36px; /* Larger font size */
+      font-weight: bold;
+      margin: 0 0 20px;
+    }
+    .movie-meta {
+      font-size: 20px; /* Larger meta font size */
+      margin: 15px 0;
+      color: #555;
+    }
+    .movie-description {
+      font-size: 25px; /* Larger description font */
+      line-height: 1.8; /* Increased line spacing */
+      margin: 30px 0;
+    }
+    .btn-buy {
+      display: inline-block;
+      padding: 15px 30px; /* Larger button */
+      font-size: 18px; /* Larger button text */
+      background-color: #28a745;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+    .btn-buy:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <!-- Movie Section -->
+  <div class="movie-section" data-aos="fade-up">
+    <!-- Image -->
+    <img src="https://www.rotoscopers.com/wp-content/uploads/2014/02/wind-rises2.jpg" alt="The Wind Rises">
+    
+    <!-- Details -->
+    <div class="movie-details">
+      <h1 class="movie-title">Kaze Tachinu</h1>
+      <p class="movie-meta">2013 / 127 phút</p>
+      <p class="movie-description">
+        <p><strong>Đạo diễn:</strong> Hayao Miyazaki</p>
+        <p><strong>Sản xuất:</strong> Naoya Fujimaki, Ryoichi Fukuyama, Kōji Hoshino, Nobuo Kawakami, Robyn Klein, Frank Marshall, Seiji Okuda, Toshio Suzuki, Geoffrey Wexler</p>
+        <p><strong>Kịch bản:</strong> Hayao Miyazaki</p>
+      </p>
+      <a href="#" class="btn-buy">Tìm Hiểu Thêm</a>
+    </div>
+  </div>
+
+  <!-- Include AOS JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true // Animations trigger only once
+    });
+  </script>
+</body>
+</html>
